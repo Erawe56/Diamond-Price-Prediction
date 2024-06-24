@@ -1,6 +1,6 @@
 # Diamond-Price-Prediction
 
-This project aims to predict diamond prices using various features such as carat, cut, color, clarity, and more. Accurate price predictions can help both buyers and sellers make informed decisions. Below is a summary of the project, including the process and results.
+This project aims to predict diamond prices using various features such as carat, cut, color, clarity, and more. Accurate price predictions can help both buyers and sellers make informed decisions. 
 
 Objective :
 To build a machine learning model that predicts the price of diamonds based on their characteristics.
@@ -23,6 +23,8 @@ Table: Width of the top of the diamond relative to the widest point
 Price: The price of the diamond (target variable)
 
 x: Length in mm
+
 y: Width in mm
+
 z: Depth in mm
 
