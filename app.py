@@ -10,8 +10,8 @@ from sklearn.ensemble import RandomForestRegressor
 model = joblib.load('D:/diamond/diamond_price_model.pkl')
 
 # Load training data to fit the preprocessor
-X_train = pd.read_csv('D:/diamond/diamonds.csv').drop(columns=['price'])  # Assuming you have the original training data
-y_train = pd.read_csv('D:/diamond/diamonds.csv')['price']  # Assuming you have the target variable 'price'
+X_train = pd.read_csv('D:/diamond/diamonds.csv').drop(columns=['price'])  
+y_train = pd.read_csv('D:/diamond/diamonds.csv')['price']  
 
 # Preprocessing
 numeric_features = ['carat', 'depth', 'table', 'x', 'y', 'z']
@@ -69,10 +69,10 @@ def validate_input(input_df, X_train):
 
 
 
-# Function to convert USD to INR (you can replace with actual conversion rate)
+# Function to convert USD to INR
 def usd_to_inr(price_usd):
-    # Assuming 1 USD = 75 INR
-    conversion_rate = 75.0
+    # Assuming 1 USD = 83 INR
+    conversion_rate = 83.0
     return price_usd * conversion_rate
 
 
